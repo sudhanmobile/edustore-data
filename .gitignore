@@ -1,5 +1,5 @@
 /unsigned/
-/repo/*
+# /repo/*
 /archive/
 /binary_transparency/
 /logs/
@@ -10,7 +10,7 @@
 *.swo
 *.pyc
 .fdroid*
-*.apk
+# *.apk
 *.jks
 /metadata/dump_*
 /build/*/
@@ -22,9 +22,9 @@ keystore.jks
 keystore.p12
 
 # the instructions page to be displayed on mirrors
-!/repo/index.css
-!/repo/index.html
-!/repo/index.png
+# !/repo/index.css
+# !/repo/index.html
+# !/repo/index.png
 
 # source of env vars to store secrets for config.yml
 /variables
