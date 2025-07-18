@@ -4,7 +4,7 @@
     "/home/vagrant/fdroidserver/fdroid update"
   ],
   "fdroiddata": {
-    "commitId": "d2070921cddc10aea1223fd0e2b649405fc46339",
+    "commitId": "068b39bdb8a467503b944c059c44aa23637cdbf1",
     "isDirty": true,
     "modifiedFiles": [
       ".env",
@@ -24,7 +24,6 @@
       "CONTRIBUTING.md",
       "LICENSE",
       "README.md",
-      "config.yml",
       "config/af/antiFeatures.yml",
       "config/af/categories.yml",
       "config/antiFeatures.yml",
@@ -242,30 +241,10 @@
       "config/zh_Hant/config.yml",
       "hooks/install-hooks.sh",
       "hooks/pre-commit",
-      "metadata/io.vagent.app.yml",
-      "metadata/org.edustore.app.yml",
-      "metadata/org.fdroid.fdroid.yml",
-      "repo/diff/1752811583000.json",
-      "repo/diff/1752817837000.json",
-      "repo/diff/1752828214000.json",
-      "repo/diff/1752828547000.json",
-      "repo/diff/1752829855000.json",
-      "repo/diff/1752832108000.json",
-      "repo/diff/1752839609000.json",
-      "repo/diff/1752842083000.json",
-      "repo/diff/1752850936000.json",
-      "repo/entry.jar",
-      "repo/entry.json",
-      "repo/index-v1.jar",
-      "repo/index-v1.json",
-      "repo/index-v2.json",
       "repo/index.css",
       "repo/index.html",
-      "repo/index.jar",
-      "repo/index.xml",
       "repo/io_vagent_app_2147483647.apk",
       "repo/io_vagent_app_2147483647.apk.idsig",
-      "repo/status/running.json",
       "schemas/metadata.json",
       "srclibs/7ZipJBindings.yml",
       "srclibs/ABS-Prototik.yml",
@@ -1020,12 +999,7 @@
       "tools/rewrite-git-redirects.py",
       "tools/trigger-issuebot"
     ],
-    "untrackedFiles": [
-      "org.edustore.app.yml",
-      "org.fdroid.fdroid.yml",
-      "repo/diff/1752851160000.json",
-      "repo/diff/1752853994000.json"
-    ]
+    "untrackedFiles": []
   },
   "fdroidserver": {
     "commitId": "399ac608c7ea09dd0616f8b00f2871c7ae814756",
@@ -1033,6 +1007,6 @@
     "modifiedFiles": [],
     "untrackedFiles": []
   },
-  "startTimestamp": 1752856041000,
+  "startTimestamp": 1752857213000,
   "subcommand": "update"
 }
