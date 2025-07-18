@@ -4,7 +4,7 @@
     "/home/vagrant/fdroidserver/fdroid update"
   ],
   "fdroiddata": {
-    "commitId": "d685543852a82a51acbe77c1f03a881dee69c210",
+    "commitId": "b0b81f35984e9662fdff7fb41b1153e4f7686174",
     "isDirty": true,
     "modifiedFiles": [
       ".env",
@@ -24,7 +24,6 @@
       "CONTRIBUTING.md",
       "LICENSE",
       "README.md",
-      "config.yml",
       "config/af/antiFeatures.yml",
       "config/af/categories.yml",
       "config/antiFeatures.yml",
@@ -242,8 +241,9 @@
       "config/zh_Hant/config.yml",
       "hooks/install-hooks.sh",
       "hooks/pre-commit",
-      "repo/diff/1752829855000.json",
-      "repo/diff/1752832108000.json",
+      "org.edustore.app.yml",
+      "org.edustore.app_1023050.apk",
+      "org.edustore.app_1023050.apk.idsig",
       "repo/diff/1752839609000.json",
       "repo/diff/1752842083000.json",
       "repo/diff/1752850936000.json",
@@ -252,6 +252,8 @@
       "repo/diff/1752855881000.json",
       "repo/diff/1752856063000.json",
       "repo/diff/1752856904000.json",
+      "repo/diff/1752857231000.json",
+      "repo/diff/1752858505000.json",
       "repo/entry.jar",
       "repo/entry.json",
       "repo/index-v1.jar",
@@ -261,6 +263,7 @@
       "repo/index.html",
       "repo/index.jar",
       "repo/index.xml",
+      "repo/status/build.json",
       "repo/status/running.json",
       "schemas/metadata.json",
       "srclibs/7ZipJBindings.yml",
@@ -1017,7 +1020,10 @@
       "tools/trigger-issuebot"
     ],
     "untrackedFiles": [
-      "repo/diff/1752857231000.json"
+      "metadata/354f38ab385bc95145c10ddcdbc4693ad02d605d2a7b54cc1f5573b3571f8848.yml",
+      "metadata/bb661622f748f0ae5a4f4c551c5992627dc3e63a6cd9d219083efbd06405ec62.yml",
+      "metadata/org.edustore.app.yml",
+      "repo/diff/1752859206000.json"
     ]
   },
   "fdroidserver": {
@@ -1026,6 +1032,6 @@
     "modifiedFiles": [],
     "untrackedFiles": []
   },
-  "startTimestamp": 1752859184000,
+  "startTimestamp": 1752861501000,
   "subcommand": "update"
 }
