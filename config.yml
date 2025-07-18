@@ -6,9 +6,10 @@ keystorepass: 3DWLsPw+iitKhBfr77m/n6cKiU326z/ZSwE9vsPnxQY=
 keypass: 3DWLsPw+iitKhBfr77m/n6cKiU326z/ZSwE9vsPnxQY=
 repo_icon:  "icon.png"
 archive_icon:  "icon.png"
+binary_transparency: false
+make_current_version_link: false
 
-
-repo_url: "https://github.com/sudhanmobile/edustore-repo/repo"
+repo_url: "https://github.com/sudhanmobile/edustore-data/repo"
 repo_maxage: 14
 repo_web_base_url: "https://f-droid.org/packages"
 

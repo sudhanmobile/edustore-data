@@ -1,9 +1,9 @@
 <div align="center">
 
-<p><img src="https://gitlab.com/fdroid/artwork/-/raw/master/fdroid-logo-2015/fdroid-logo.svg" width="200"></p>
+<p><img src="logo.png" width="200"></p>
 
-# F-Droid Data
-### Metadata for all the apps of the F-Droid main repository.
+# EduStore Data
+### Metadata for all the apps of the EduStore main repository.
 
 [![build status](https://gitlab.com/fdroid/fdroiddata/badges/master/pipeline.svg)](https://gitlab.com/fdroid/fdroiddata/-/pipelines)
 [
@@ -39,7 +39,7 @@ See the [Contributing](CONTRIBUTING.md) documentation.
 
 ## Translation
 
-Many app summaries and some descriptions can be translated as part of F-Droid. See [Translation and Localization](https://f-droid.org/docs/Translation_and_Localization)
+Many app summaries and some descriptions can be translated as part of EduStore. See [Translation and Localization](https://f-droid.org/docs/Translation_and_Localization)
 for more info.
 
 <div align="center">
