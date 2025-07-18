@@ -6,8 +6,9 @@ keystorepass: 3DWLsPw+iitKhBfr77m/n6cKiU326z/ZSwE9vsPnxQY=
 keypass: 3DWLsPw+iitKhBfr77m/n6cKiU326z/ZSwE9vsPnxQY=
 repo_icon:  "icon.png"
 archive_icon:  "icon.png"
+binary_transparency: false
 
-repo_url: "https://github.com/sudhanmobile/edustore-data/repo"
+repo_url: "https://sudhanmobile.github.io/edustore-data/repo"
 repo_maxage: 14
 repo_web_base_url: "https://f-droid.org/packages"
 
@@ -34,7 +35,7 @@ keep_when_not_allowed: true
 make_current_version_link: false
 refresh_scanner: true
 
-binary_transparency_remote: git@gitlab.com:fdroid/f-droid.org-transparency-log.git
+# binary_transparency_remote: git@gitlab.com:fdroid/f-droid.org-transparency-log.git
 
 keyaliases:
   com.ghostsq.commander.samba: '@com.ghostsq.commander'
