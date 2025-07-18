@@ -1,0 +1,32 @@
+Ads:
+  description: Šioje programėlėje yra reklamų
+  name: Skelbimai
+DisabledAlgorithm:
+  description: Ši programėlė turi silpną saugumo parašą
+  name: Pasirašyta naudojant nesaugų algoritmą
+KnownVuln:
+  description: Šioje programėlėje yra žinomas saugumo pažeidžiamumas
+  name: Žinomas pažeidžiamumas
+NSFW:
+  description: Šioje programoje yra turinio, kuris neturėtų būti viešinamas ar matomas visur
+  name: „NSFW“
+NoSourceSince:
+  name: Pirminis kodas daugiau nebeprieinamas, atnaujinimai negalimi.
+NonFreeAdd:
+  description: Ši programėlė skatina įdiegti nelaisvus papildinius
+  name: Ne atviro kodo papildiniai
+NonFreeAssets:
+  description: Šioje programėlėje yra nelaisvų resursų
+  name: Ne atviro kodo resursai
+NonFreeDep:
+  description: Ši programėlė priklauso nuo nelaisvų programėlių
+  name: Ne atviro kodo priklausomieji
+NonFreeNet:
+  description: Ši programėlė skatina nelaisvas tinklo paslaugas
+  name: Ne atviro kodo tinklo paslaugos
+Tracking:
+  description: Ši programėlė seka ir perduoda Jūsų veiksmus
+  name: Sekimas
+TetheredNet:
+  description: Ši programa visiškai priklauso nuo tam tikro tinklo paslaugu
+  name: Pririšto tinklo paslaugos

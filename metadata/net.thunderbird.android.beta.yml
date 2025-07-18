@@ -1,0 +1,212 @@
+Categories:
+  - Connectivity
+  - Email
+  - Internet
+  - Writing
+License: Apache-2.0
+WebSite: https://thunderbird.net
+SourceCode: https://github.com/thunderbird/thunderbird-android
+IssueTracker: https://github.com/thunderbird/thunderbird-android/issues
+Translation: https://hosted.weblate.org/projects/tb-android/
+Changelog: https://github.com/thunderbird/thunderbird-android/releases/
+Donate: https://mzla.link/supportTfABeta
+
+AutoName: Thunderbird Beta for Testers
+
+RepoType: git
+Repo: https://github.com/thunderbird/thunderbird-android.git
+Binaries: https://ftp.mozilla.org/pub/thunderbird-mobile/android/releases/%v/thunderbird-%v.apk
+
+Builds:
+  - versionName: 8.0b3
+    versionCode: 6
+    commit: THUNDERBIRD_8_0b3
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    binary: https://github.com/thunderbird/thunderbird-android/releases/download/THUNDERBIRD_8_0b3/thunderbird-8.0b3.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e '/maven.mozilla.org\/maven2/d' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 8.0b4
+    versionCode: 7
+    commit: THUNDERBIRD_8_0b4
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    binary: https://github.com/thunderbird/thunderbird-android/releases/download/THUNDERBIRD_8_0b4/thunderbird-8.0b4.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e '/maven.mozilla.org\/maven2/d' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 8.0b5
+    versionCode: 8
+    commit: THUNDERBIRD_8_0b5
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    binary: https://github.com/thunderbird/thunderbird-android/releases/download/THUNDERBIRD_8_0b5/thunderbird-8.0b5.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e '/maven.mozilla.org\/maven2/d' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 9.0b3
+    versionCode: 11
+    commit: THUNDERBIRD_9_0b3
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    binary: https://github.com/thunderbird/thunderbird-android/releases/download/THUNDERBIRD_9_0b3/thunderbird-9.0b3.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e '/maven.mozilla.org\/maven2/d' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 10.0b1
+    versionCode: 12
+    commit: 752b04ad7212ff5700b0e8696475f1c3a6e5e601
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e '/maven.mozilla.org\/maven2/d' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 10.0b2
+    versionCode: 13
+    commit: fadb5b2830a253fe21b7ff6c1bb58b7df2ece93f
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e '/maven.mozilla.org\/maven2/d' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 11.0b1
+    versionCode: 14
+    commit: e7bef5d5556ce9ecbcb2f37c9d62d02f8bb19938
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e 's/maven.mozilla.org/repo1.maven.org/' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 11.0b2
+    versionCode: 15
+    commit: caa19b00d580dfa494e74c18e39cd1269733d605
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e 's/maven.mozilla.org/repo1.maven.org/' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 11.0b3
+    versionCode: 16
+    commit: 53ac4114ba7cf4b9d8ca37850ed9e7563b69f44f
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e 's/maven.mozilla.org/repo1.maven.org/' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 11.0b4
+    versionCode: 17
+    commit: cffc2cced3969f08e18f469a1b02ad29370bdc42
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e 's/maven.mozilla.org/repo1.maven.org/' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+  - versionName: 11.0b5
+    versionCode: 18
+    commit: 4335096e6295a6f52964f1481372ff8ce87dd36a
+    output: app-thunderbird/build/outputs/apk/foss/beta/app-thunderbird-foss-beta-unsigned.apk
+    rm:
+      - feature/funding/googleplay
+    prebuild:
+      - sed -i -e 's/maven.mozilla.org/repo1.maven.org/' -e '/glean/d' -e '/app-k9mail/d'
+        -e '/googleplay/d' settings.gradle.kts
+      - sed -i -e 's/feature.funding.googleplay/feature.funding.link/' app-thunderbird/build.gradle.kts
+      - gradle clean
+    scandelete:
+      - build-plugin
+    build: gradle assembleFossBeta
+
+AllowedAPKSigningKeys: 056bfafb450249502fd9226228704c2529e1b822da06760d47a85c9557741fbd
+
+MaintainerNotes: |-
+  Thunderbird for Android is based on K-9 Mail. The source repository contains both applications, a
+  symlink points to the correct metadata path. We're using the `foss` flavor for submission to
+  f-droid, while the `full` flavor will be reserved for the Play Store.
+
+  Thunderbird on the Play Store has two separate application ids and listings. This listing is the
+  beta release where we're testing some feature earlier for feedback from our users.
+
+  The source code may have a few pointers to potentially unwanted features. There is the Play Store
+  billing library, which we're going to use to collect financial contributions in the Play Store
+  flavor. The f-droid variant simply links out to our fundraising page in a web browser. There is
+  also Glean telemetry, which is currently disabled. When we re-enable it, we expect it will meet
+  the opt-in requirements set in the policies.
+
+  Auto updates are currently disabled and will be done manually. We strive to enable auto updates
+  soon after the release.
+
+AutoUpdateMode: None
+UpdateCheckMode: None
+CurrentVersion: 11.0b5
+CurrentVersionCode: 18

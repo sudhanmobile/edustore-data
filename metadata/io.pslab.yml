@@ -1,0 +1,62 @@
+Categories:
+  - Science & Education
+License: Apache-2.0
+AuthorName: FOSSASIA
+AuthorEmail: dev@fossasia.org
+WebSite: https://pslab.io/
+SourceCode: https://github.com/fossasia/pslab-android
+IssueTracker: https://github.com/fossasia/pslab-android/issues
+Changelog: https://github.com/fossasia/pslab-android/releases
+
+AutoName: PSLab
+
+RepoType: git
+Repo: https://github.com/fossasia/pslab-android
+
+Builds:
+  - versionName: 2.1.0
+    versionCode: 22
+    commit: 4f3e32bfb665105b45d818cd646d9e220b4df2bf
+    subdir: app
+    sudo:
+      - apt-get update
+      - apt-get install -y openjdk-11-jdk-headless
+      - update-alternatives --auto java
+    gradle:
+      - yes
+    rm:
+      - pslab-android.zip
+    prebuild: sed -i -e '/LOCAL_KEY/d' build.gradle
+
+  - versionName: 3.1.36
+    versionCode: 60
+    commit: c6b95f2c65d8d24f19af541bdb96c4a426d27059
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/versionCode =.*/versionCode = $$VERCODE$$/' -e 's/versionName
+      =.*/versionName = "$$VERSION$$"/' build.gradle.kts
+
+  - versionName: 3.2.4
+    versionCode: 153
+    commit: 73e56b6f01b179792f842627992da22e9c206c0f
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/versionCode =.*/versionCode = $$VERCODE$$/' -e 's/versionName
+      =.*/versionName = "$$VERSION$$"/' build.gradle.kts
+
+  - versionName: 3.2.17
+    versionCode: 166
+    commit: v3.2.17
+    subdir: app
+    gradle:
+      - yes
+    prebuild: sed -i -e 's/versionCode =.*/versionCode = $$VERCODE$$/' -e 's/versionName
+      =.*/versionName = "$$VERSION$$"/' build.gradle.kts
+
+AutoUpdateMode: Version v%v
+UpdateCheckMode: HTTP
+UpdateCheckData: https://github.com/fossasia/pslab-android/releases/latest/download/versionCode.txt|(\d+)|https://github.com/fossasia/pslab-android/releases/latest|releases/tag/v([\d.]+)
+CurrentVersion: 3.2.17
+CurrentVersionCode: 166

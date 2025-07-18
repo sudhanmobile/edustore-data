@@ -1,0 +1,116 @@
+AntiFeatures:
+  NonFreeNet:
+    en-US: Uses the data of various local public transport agencies
+Categories:
+  - Navigation
+  - Public Transport Map & Timetable
+License: GPL-3.0-or-later
+AuthorName: Torsten Grote
+WebSite: https://transportr.app/?utm_source=fdroid
+SourceCode: https://github.com/grote/Transportr
+IssueTracker: https://github.com/grote/Transportr/issues
+Translation: https://www.transifex.com/grobox/transportr/
+Changelog: https://github.com/grote/Transportr/releases
+Donate: https://transportr.app/donate/?utm_source=fdroid
+Liberapay: Transportr
+Bitcoin: 12JaQp8zfqRb83JfSwVjH4rZWsZnWRPoyG
+
+AutoName: Liberario
+
+RepoType: git
+Repo: https://github.com/grote/Transportr.git
+
+Builds:
+  - versionName: 2.2.0
+    versionCode: 124
+    commit: fedb131dcdd8c7561066d7a4dffdd229ef0b8036
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - gradlewitnessakwizgran@0bd93192051f6327e4dea5b296bf32644dd0dae1
+    rm:
+      - app/libs/gradle-witness.jar
+    prebuild:
+      - pushd $$gradlewitnessakwizgran$$
+      - gradle build
+      - popd
+      - mv $$gradlewitnessakwizgran$$/build/libs/gradlewitnessakwizgran.jar libs/gradle-witness.jar
+    scanignore:
+      - app/libs/gradle-witness.jar
+    ndk: 21.4.7075529
+    gradleprops:
+      - buildServer
+
+  - versionName: 2.2.1
+    versionCode: 125
+    commit: 056c6b49eb9fc043141884d1e7726b46bd580002
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - gradlewitnessakwizgran@0bd93192051f6327e4dea5b296bf32644dd0dae1
+    rm:
+      - app/libs/gradle-witness.jar
+    prebuild:
+      - pushd $$gradlewitnessakwizgran$$
+      - gradle build
+      - popd
+      - mv $$gradlewitnessakwizgran$$/build/libs/gradlewitnessakwizgran.jar libs/gradle-witness.jar
+    scanignore:
+      - app/libs/gradle-witness.jar
+    ndk: 21.4.7075529
+    gradleprops:
+      - buildServer
+
+  - versionName: 2.2.2
+    versionCode: 126
+    disable: a critical bug, ref https://github.com/grote/Transportr/issues/972
+    commit: 1f2a187b067f3c52a13f21a9dfd72e8cbc629564
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - gradlewitnessakwizgran@0bd93192051f6327e4dea5b296bf32644dd0dae1
+    rm:
+      - app/libs/gradle-witness.jar
+    prebuild:
+      - cp ../gradle/wrapper/gradle-wrapper.properties $$gradlewitnessakwizgran$$/gradle/wrapper/gradle-wrapper.properties
+      - sed -i -e 's/compile/implementation/g' $$gradlewitnessakwizgran$$/build.gradle
+      - pushd $$gradlewitnessakwizgran$$
+      - gradle build
+      - popd
+      - mv $$gradlewitnessakwizgran$$/build/libs/gradlewitnessakwizgran.jar libs/gradle-witness.jar
+    scanignore:
+      - app/libs/gradle-witness.jar
+    ndk: 21.4.7075529
+    gradleprops:
+      - buildServer
+
+  - versionName: 2.2.3
+    versionCode: 127
+    commit: b89392d137a91ce1d2158ad79e46b872010cf67d
+    subdir: app
+    gradle:
+      - yes
+    srclibs:
+      - gradlewitnessakwizgran@0bd93192051f6327e4dea5b296bf32644dd0dae1
+    rm:
+      - app/libs/gradle-witness.jar
+    prebuild:
+      - cp ../gradle/wrapper/gradle-wrapper.properties $$gradlewitnessakwizgran$$/gradle/wrapper/gradle-wrapper.properties
+      - sed -i -e 's/compile/implementation/g' $$gradlewitnessakwizgran$$/build.gradle
+      - pushd $$gradlewitnessakwizgran$$
+      - gradle build
+      - popd
+      - mv $$gradlewitnessakwizgran$$/build/libs/gradlewitnessakwizgran.jar libs/gradle-witness.jar
+    scanignore:
+      - app/libs/gradle-witness.jar
+    ndk: 21.4.7075529
+    gradleprops:
+      - buildServer
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: 2.2.3
+CurrentVersionCode: 127

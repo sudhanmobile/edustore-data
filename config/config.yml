@@ -1,0 +1,8 @@
+archive:
+  description: The archive of the official Edu-Store Free Software repository. Apps here are old and can contain known vulnerabilities and security issues!
+  name: Edu-Store Archive
+  icon: icon.png
+repo:
+  description: The official Edu-Store Free Software repository. Everything in this repository is always built from the source code.
+  name: Edu-Store
+  icon: icon.png

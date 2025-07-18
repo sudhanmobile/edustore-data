@@ -1,0 +1,78 @@
+Connectivity:
+  name: Связь
+Development:
+  name: Разработка
+Games:
+  name: Игры
+Graphics:
+  name: Графика
+Internet:
+  name: Интернет
+Money:
+  name: Финансы
+Multimedia:
+  name: Мультимедиа
+Navigation:
+  name: Навигация
+Phone & SMS:
+  name: Звонки и сообщения
+Reading:
+  name: Чтение
+Science & Education:
+  name: Наука и образование
+Security:
+  name: Безопасность
+Sports & Health:
+  name: Спорт и здоровье
+System:
+  name: Системные
+Theming:
+  name: Оформление
+Time:
+  name: Часы
+Writing:
+  name: Офис
+DNS & Hosts:
+  name: DNS и хосты
+Email:
+  name: Электронная почта
+VPN & Proxy:
+  name: VPN и прокси
+Browser:
+  name: Браузер
+Calculator:
+  name: Калькулятор
+Cloud Storage & File Sync:
+  name: Облачное хранилище и Синхронизация файлов
+Ebook Reader:
+  name: Читатель электронных книг
+File Encryption & Vault:
+  name: Шифрование файлов и Сейф
+Finance Manager:
+  name: Финансовый менеджер
+Gallery:
+  name: Галерея
+File Transfer:
+  name: Передача файлов
+Launcher:
+  name: Лаунчер
+Local Media Player:
+  name: Локальный медиаплеер
+Messaging:
+  name: Отправление сообщений
+News:
+  name: Новости
+Note:
+  name: Заметка
+Online Media Player:
+  name: Онлайн медиаплеер
+Password & 2FA:
+  name: Пароль и 2-ух факторная верификация
+Podcast:
+  name: Подкаст
+Public Transport Map & Timetable:
+  name: Карта публичного транспорта и Расписание
+Recipe Manager:
+  name: Менеджер рецептов
+Shopping List:
+  name: Список покупок
