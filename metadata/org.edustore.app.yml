@@ -2192,7 +2192,7 @@ Builds:
 
   - versionName: 1.23.0
     versionCode: 1023050
-    commit: cab473cc0d4461952f901baff99b158e6395a7fa
+    commit: adccb866cef6f93288191f4dafaf17893f06c846
     subdir: app
     gradle:
       - full
