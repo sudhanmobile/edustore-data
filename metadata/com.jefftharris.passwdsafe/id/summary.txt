@@ -1,1 +1,0 @@
-pengelola kata sandi PasswordSafe
