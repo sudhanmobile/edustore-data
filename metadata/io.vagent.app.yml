@@ -1,9 +1,12 @@
-AuthorName: ''
 Categories:
-- repo
-CurrentVersionCode: 2147483647
-IssueTracker: ''
+  - Internet
+License: GPL-3.0-only
 Name: Arivoon
-SourceCode: ''
-Summary: ''
-WebSite: ''
+Summary: Voice agent app for Android
+Description: |-
+  Arivoon is a voice agent app for Android.
+CurrentVersionCode: 1
+AutoUpdateMode: None
+WebSite: https://example.com
+SourceCode: https://example.com/source
+IssueTracker: https://example.com/issues
