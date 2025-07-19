@@ -4,7 +4,7 @@
     "/home/vagrant/fdroidserver/fdroid update"
   ],
   "fdroiddata": {
-    "commitId": "5729852be7e7fab9238d3b18c338313058b201ad",
+    "commitId": "8c7081912527036a7b191f230954f516df4c0314",
     "isDirty": true,
     "modifiedFiles": [
       ".env",
@@ -24,8 +24,7 @@
       "CONTRIBUTING.md",
       "LICENSE",
       "README.md",
-      "client-apk/org.edustore.app_1023050.apk",
-      "client-apk/org.edustore.app_1023050.apk.idsig",
+      "config.yml",
       "config/af/antiFeatures.yml",
       "config/af/categories.yml",
       "config/antiFeatures.yml",
@@ -243,7 +242,6 @@
       "config/zh_Hant/config.yml",
       "hooks/install-hooks.sh",
       "hooks/pre-commit",
-      "metadata/org.edustore.app.yml",
       "repo/index.css",
       "repo/index.html",
       "repo/status/build.json",
@@ -1002,7 +1000,10 @@
       "tools/rewrite-git-redirects.py",
       "tools/trigger-issuebot"
     ],
-    "untrackedFiles": []
+    "untrackedFiles": [
+      "temp/CIARANG.RSA",
+      "temp/cert.der"
+    ]
   },
   "fdroidserver": {
     "commitId": "399ac608c7ea09dd0616f8b00f2871c7ae814756",
@@ -1010,6 +1011,6 @@
     "modifiedFiles": [],
     "untrackedFiles": []
   },
-  "startTimestamp": 1752891388000,
+  "startTimestamp": 1752894816000,
   "subcommand": "update"
 }
